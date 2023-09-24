@@ -13,6 +13,10 @@ nvm install --lts
 npm install -g pnpm
 npm install -g turbo
 sudo apt-get install ripgrep
+sudo apt-get install tmux
+
+# clone some required things
+https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # link
 ln -s ~/Dotfiles/nvim ~/.config/nvim
