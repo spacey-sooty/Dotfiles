@@ -6,4 +6,5 @@ On a clean install of any Debian based OS run `chmod +x debian-init.sh && ./debi
 - docker install + conf
 - terminal autocomplete
 - git aliases
+- make theme sync across devices
 
