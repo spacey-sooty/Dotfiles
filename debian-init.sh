@@ -29,7 +29,7 @@ sudo apt-get install tmux
 # clone some required things
 
 # tmux plugin manager
-https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # link
 
