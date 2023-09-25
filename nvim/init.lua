@@ -15,6 +15,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 	"catppuccin/nvim",
+	"christoomey/vim-tmux-navigator",
 	"nvim-lua/plenary.nvim",
 	"nvim-telescope/telescope.nvim",
 	"ThePrimeagen/harpoon",
