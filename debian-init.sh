@@ -45,3 +45,6 @@ ln -s ~/Dotfiles/.bashrc ~/.bashrc
 # tmux conf
 ln -s ~/Dotfiles/.tmux.conf ~/.tmux.conf
 
+# vim conf
+ln -s ~/Dotfiles/.vimrc ~/.vimrc
+
