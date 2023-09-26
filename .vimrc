@@ -15,3 +15,7 @@ set showmode
 set showmatch
 set hlsearch
 set termguicolors
+colorscheme catppuccin_mocha
+syntax on
+nnoremap ; :
+
