@@ -52,3 +52,6 @@ require("catppuccin").setup({})
 vim.cmd.colorscheme("catppuccin")
 vim.g.mapleader = " "
 vim.cmd.set("nu rnu")
+vim.cmd.set("cursorline")
+vim.cmd.set("cursorcolumn")
+

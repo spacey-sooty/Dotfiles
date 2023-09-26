@@ -1,8 +1,6 @@
+" set calls
 set nocompatible
-set nu rnu 
-filetype on
-filetype plugin on
-filetype indent on
+set nu rnu
 set cursorline
 set cursorcolumn
 set shiftwidth=4
@@ -15,7 +13,15 @@ set showmode
 set showmatch
 set hlsearch
 set termguicolors
+
+" misc calls
 colorscheme catppuccin_mocha
-syntax on
+syntax on 
+filetype on
+filetype plugin on
+filetype indent on
+
+
+" remaps
 nnoremap ; :
 
