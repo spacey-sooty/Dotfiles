@@ -16,12 +16,12 @@ set termguicolors
 
 " misc calls
 colorscheme catppuccin_mocha
-syntax on 
 filetype on
 filetype plugin on
 filetype indent on
 
-
 " remaps
 nnoremap ; :
+let mapleader = "\<space>"
+nnoremap <leader>pv :Ex<cr>
 

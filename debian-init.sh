@@ -33,8 +33,8 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # vim colorscheme
 git clone https://github.com/catppuccin/vim
-mkdir .vim
-mv vim/colors .vim/colors
+mkdir ~/.vim
+mv vim/colors ~/.vim/colors
 rm vim -rf
 
 # link
@@ -53,5 +53,4 @@ ln -s ~/Dotfiles/.tmux.conf ~/.tmux.conf
 
 # vim conf
 ln -s ~/Dotfiles/.vimrc ~/.vimrc
-ln -s ~/Dotfiles/.vim ~/.vim
 
