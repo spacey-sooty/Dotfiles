@@ -8,7 +8,7 @@ end)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'clangd', 'tsserver', 'rust_analyzer', 'zls'},
+  ensure_installed = {'clangd', 'tsserver', 'rust_analyzer', 'astro'},
   handlers = {
     lsp_zero.default_setup,
   }
