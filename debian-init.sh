@@ -39,6 +39,9 @@ rm vim -rf
 
 # link
 
+# neovim
+ln -s ~/Dotfiles/nvim-linux64/bin /bin
+
 # neovim conf
 ln -s ~/Dotfiles/nvim ~/.config/nvim
 
