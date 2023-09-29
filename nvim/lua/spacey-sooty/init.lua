@@ -1,2 +1,0 @@
-require("spacey-sooty.remap")
-
