@@ -20,6 +20,9 @@ nvm install --lts
 npm install -g pnpm
 npm install -g turbo
 
+# gh cli
+sudo apt install github-cli
+
 # ripgrep
 sudo apt-get install ripgrep
 
@@ -56,4 +59,7 @@ ln -s ~/Dotfiles/.tmux.conf ~/.tmux.conf
 
 # vim conf
 ln -s ~/Dotfiles/.vimrc ~/.vimrc
+
+# gh config
+ln -s ~/Dotfiles/gh ~/.config/gh
 
