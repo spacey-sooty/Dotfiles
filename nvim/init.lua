@@ -1,5 +1,4 @@
-require("remap")
-require("status")
+require("spacey-sooty")
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -38,39 +37,5 @@ require("lazy").setup({
 		}
 	}
 })
-
-require("gitsigns").setup()
-require("nvim-autopairs").setup()
-require("mini.comment").setup()
-require("nvim-treesitter.configs").setup({
-	ensure_installed = { "c", "markdown", "lua", "scss", "typescript", "rust" },
-	sync_install = false,
-	highlight = { enable = true },
-	indent = { enable = true },
-})
-require("catppuccin").setup({})
-
 vim.cmd.colorscheme("catppuccin")
-vim.g.mapleader = " "
-vim.g.netrw_banner=0
--- todo fix hide gitignored items in netrw
--- vim.g.netrw_list_hide=netrw_gitignor#Hide()
-vim.api.nvim_create_autocmd('filetype', {
-  pattern = 'netrw',
-  desc = 'Better mappings for netrw',
-  callback = function()
-    local bind = function(lhs, rhs)
-      vim.keymap.set('n', lhs, rhs, {remap = true, buffer = true})
-    end 
-
-    -- edit new file
-    bind('n', '%')
-
-    -- rename file
-    bind('r', 'R')
-  end
-})
-vim.cmd.set("nu rnu")
-vim.cmd.set("cursorline")
-vim.cmd.set("cursorcolumn")
 
