@@ -14,6 +14,7 @@
   "nvim-lspconfig": { "branch": "master", "commit": "50fcf96ec5a6e7bfdcbbea4f905c33e85408f170" },
   "nvim-treesitter": { "branch": "master", "commit": "dd4e2dbc002dfce109d621e8bdcd9d89438b0a32" },
   "plenary.nvim": { "branch": "master", "commit": "9ce85b0f7dcfe5358c0be937ad23e456907d410b" },
+  "sPoNGe-BoB.NvIm": { "branch": "master", "commit": "9e82bdc101b2ce4149f8700847bb6bad87427cd0" },
   "telescope.nvim": { "branch": "master", "commit": "ffe90fac32122f401429b14d383137bd92a685d0" },
   "vim-tmux-navigator": { "branch": "master", "commit": "7db70e08ea03b3e4d91f63713d76134512e28d7e" }
 }

@@ -23,6 +23,7 @@ require("lazy").setup({
 	"lewis6991/gitsigns.nvim",
 	"echasnovski/mini.comment",
 	"nvim-treesitter/nvim-treesitter",
+	"tjdevries/sPoNGe-BoB.NvIm",
 	build = ":TSUpdate",
 	{
 		"VonHeikemen/lsp-zero.nvim",
