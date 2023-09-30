@@ -53,7 +53,8 @@ require("catppuccin").setup({})
 vim.cmd.colorscheme("catppuccin")
 vim.g.mapleader = " "
 vim.g.netrw_banner=0
-vim.g.netrw_list_hide=netrw_gitignorHide()
+-- todo fix hide gitignored items in netrw
+-- vim.g.netrw_list_hide=netrw_gitignor#Hide()
 vim.api.nvim_create_autocmd('filetype', {
   pattern = 'netrw',
   desc = 'Better mappings for netrw',

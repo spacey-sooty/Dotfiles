@@ -1,8 +1,5 @@
 #!/usr/bin/sh
 
-# perms
-chmod +x `ls scripts/*.sh`
-
 # install
 
 # rust
@@ -42,9 +39,6 @@ rm vim -rf
 
 # link
 
-# neovim
-ln -s ~/Dotfiles/nvim-linux64/bin /bin
-
 # neovim conf
 ln -s ~/Dotfiles/nvim ~/.config/nvim
 
@@ -55,11 +49,11 @@ ln -s ~/Dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/Dotfiles/.bashrc ~/.bashrc
 
 # tmux conf
-ln -s ~/Dotfiles/.tmux.conf ~/.tmux.conf
+ln -s ~/Dotfiles/tmux/.tmux.conf ~/.tmux.conf
 
 # vim conf
-ln -s ~/Dotfiles/.vimrc ~/.vimrc
+ln -s ~/Dotfiles/vim/.vimrc ~/.vimrc
 
-# gh config
-ln -s ~/Dotfiles/gh ~/.config/gh
+# final step login with github auth
+gh auth login
 
