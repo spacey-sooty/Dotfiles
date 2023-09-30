@@ -40,3 +40,8 @@ if exists('+termguicolors')
     let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
     set termguicolors
 endif
+
+" netrw
+let g:netrw_list_hide=netrw_gitignore#Hide()
+let g:netrw_banner=0        " disable annoying banner
+
