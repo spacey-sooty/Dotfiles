@@ -8,7 +8,7 @@
 	name = Isaac Turner
 	email = spacey_sooty@outlook.com
 [core]
-	editor = ~/Dotfiles/nvim-linux64/bin/nvim
+	editor = vim
 [init]
 	defaultBranch = master
 [alias]
