@@ -22,7 +22,7 @@ set hlsearch
 
 " colourscheme
 set termguicolors
-source ~/Dotfiles/vim/karma_clear.vim
+colorscheme catppuccin_mocha
 
 " make vim respond to filetypes
 filetype on
