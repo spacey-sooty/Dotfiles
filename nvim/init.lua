@@ -14,7 +14,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	"catppuccin/nvim",
 	"christoomey/vim-tmux-navigator",
 	"nvim-lua/plenary.nvim",
 	"nvim-telescope/telescope.nvim",
@@ -38,5 +37,4 @@ require("lazy").setup({
 		}
 	}
 })
-vim.cmd.colorscheme("catppuccin")
 
