@@ -2,7 +2,7 @@
 vim.g.netrw_banner=0
 
 -- ignore gitignored files and .git directory
-vim.g.netrw_list_hide = vim.fn['netrw_gitignore#Hide']() .. [[.git/]]
+vim.g.netrw_list_hide = vim.fn['netrw_gitignore#Hide']() .. [[,.git/]]
 
 -- bind n to create new file and r to rename
 vim.api.nvim_create_autocmd('filetype', {
