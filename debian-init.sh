@@ -11,6 +11,11 @@ tar -xf nvim-linux64.tar.gz
 mv nvim-linux64 ~/nvim-linux64
 rm nvim-linux64.tar.gz
 
+# neovide
+curl -LO https://github.com/neovide/neovide/releases/latest/download/neovide-linux-x86_64.tar.gz
+tar -xzf neovide-linux-x86_64.tar.gz
+sudo mv neovide /bin/neovide
+
 # node, pnpm, turbo
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
 source ~/.bashrc
