@@ -1,8 +1,5 @@
 #!/usr/bin/sh
 
-# perms
-chmod +x `ls scripts/*.sh`
-
 # install
 
 # rust
@@ -11,6 +8,7 @@ curl https://sh.rustup.rs -sSf | sh
 # neovim
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
 tar -xf nvim-linux64.tar.gz
+mv nvim-linux64 ~/nvim-linux64
 rm nvim-linux64.tar.gz
 
 # node, pnpm, turbo
@@ -35,15 +33,12 @@ sudo apt-get install tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # vim colorscheme
-git clone https://github.com/catppuccin/vim
+git clone https://github.com/catppuccin/vim .vim
 mkdir ~/.vim
-mv vim/colors ~/.vim/colors
-rm vim -rf
+mv .vim/colors ~/.vim/colors
+rm .vim -rf
 
 # link
-
-# neovim
-ln -s ~/Dotfiles/nvim-linux64/bin /bin
 
 # neovim conf
 ln -s ~/Dotfiles/nvim ~/.config/nvim
@@ -55,11 +50,11 @@ ln -s ~/Dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/Dotfiles/.bashrc ~/.bashrc
 
 # tmux conf
-ln -s ~/Dotfiles/.tmux.conf ~/.tmux.conf
+ln -s ~/Dotfiles/tmux/.tmux.conf ~/.tmux.conf
 
 # vim conf
-ln -s ~/Dotfiles/.vimrc ~/.vimrc
+ln -s ~/Dotfiles/vim/.vimrc ~/.vimrc
 
-# gh config
-ln -s ~/Dotfiles/gh ~/.config/gh
+# final step login with github auth
+gh auth login
 
