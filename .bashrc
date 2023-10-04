@@ -116,7 +116,6 @@ if ! shopt -oq posix; then
 fi
 . "$HOME/.cargo/env"
 export PATH="~/Downloads/zig-linux:$PATH"
-export PATH="~/nvim-linux64/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

@@ -6,10 +6,13 @@
 curl https://sh.rustup.rs -sSf | sh
 
 # neovim
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
-tar -xf nvim-linux64.tar.gz
-mv nvim-linux64 ~/nvim-linux64
-rm nvim-linux64.tar.gz
+# build deps
+sudo apt-get install ninja-build gettext cmake unzip curl
+cd ~
+git clone https://github.com/neovim/neovim.git
+cd neovim
+make
+sudo make install
 
 # neovide
 curl -LO https://github.com/neovide/neovide/releases/latest/download/neovide-linux-x86_64.tar.gz
