@@ -24,18 +24,18 @@ require("lazy").setup({
 	"nvim-treesitter/nvim-treesitter",
 	"tjdevries/sPoNGe-BoB.NvIm",
 	build = ":TSUpdate",
-	{
-		"VonHeikemen/lsp-zero.nvim",
-		branch = "v3.x",
-		dependencies = {
-			"neovim/nvim-lspconfig",
-			"williamboman/mason.nvim",
-			"williamboman/mason-lspconfig.nvim",
-			"hrsh7th/nvim-cmp",
-			"hrsh7th/cmp-nvim-lsp",
-			"L3MON4D3/LuaSnip",
-		}
-	},
+	-- {
+	-- 	"VonHeikemen/lsp-zero.nvim",
+	-- 	branch = "v3.x",
+	-- 	dependencies = {
+	-- 		"neovim/nvim-lspconfig",
+	-- 		"williamboman/mason.nvim",
+	-- 		"williamboman/mason-lspconfig.nvim",
+	-- 		"hrsh7th/nvim-cmp",
+	-- 		"hrsh7th/cmp-nvim-lsp",
+	-- 		"L3MON4D3/LuaSnip",
+	-- 	}
+	-- },
 	"spacey-sooty/stackmaps.nvim"
 })
 vim.cmd.colorscheme("catppuccin")
