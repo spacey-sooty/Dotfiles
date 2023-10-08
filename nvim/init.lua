@@ -19,7 +19,6 @@ require("lazy").setup({
 	"nvim-telescope/telescope.nvim",
 	"ThePrimeagen/harpoon",
 	"windwp/nvim-autopairs",
-	"tpope/vim-fugitive",
 	"echasnovski/mini.comment",
 	"nvim-treesitter/nvim-treesitter",
 	"tjdevries/sPoNGe-BoB.NvIm",
