@@ -14,6 +14,8 @@ require('mason-lspconfig').setup({
 		'rust_analyzer',
 		'svelte',
 		'astro',
+		'zk',
+		'lua_ls',
 	},
   handlers = {
     lsp_zero.default_setup,
