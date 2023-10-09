@@ -19,7 +19,6 @@ require("lazy").setup({
 	"nvim-telescope/telescope.nvim",
 	"ThePrimeagen/harpoon",
 	"windwp/nvim-autopairs",
-	"lewis6991/gitsigns.nvim",
 	"echasnovski/mini.comment",
 	"nvim-treesitter/nvim-treesitter",
 	"tjdevries/sPoNGe-BoB.NvIm",
@@ -37,6 +36,11 @@ require("lazy").setup({
 		}
 	},
 	"spacey-sooty/stackmaps.nvim",
+	{ 
+		'nvim-telescope/telescope-fzf-native.nvim', 
+                build = 'make'
+	},
 })
+
 vim.cmd.colorscheme("catppuccin")
 
