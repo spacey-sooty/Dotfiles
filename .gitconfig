@@ -12,4 +12,5 @@
 [init]
 	defaultBranch = master
 [alias]
-	ac = commit -am
+	ac = commit -S -am
+    commit = commit -S
