@@ -16,3 +16,4 @@
 	gpgsign = true
 [alias]
     ac = commit -S -am
+    commit = commit -S
