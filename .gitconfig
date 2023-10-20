@@ -11,6 +11,5 @@
 	editor = vim
 [init]
 	defaultBranch = master
-[alias]
-	ac = commit -S -am
-    commit = commit -S
+[commit]
+	gpgsign = true
