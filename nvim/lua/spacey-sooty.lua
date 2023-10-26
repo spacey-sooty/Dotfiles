@@ -6,7 +6,5 @@ P = function(v)
 	return v
 end
 
-vim.cmd.set("tabstop=4")
-vim.cmd.set("shiftwidth=4")
-vim.cmd.set("expandtab")
+require("tab").set(4)
 
