@@ -9,7 +9,7 @@
 	email = spacey_sooty@outlook.com
 	signingkey = 1CC20B84B0B48385
 [core]
-	editor = vim
+	editor = nvim
 [init]
 	defaultBranch = master
 [commit]
