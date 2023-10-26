@@ -6,7 +6,11 @@ P = function(v)
 	return v
 end
 
-vim.cmd.set("tabstop=4")
-vim.cmd.set("shiftwidth=4")
-vim.cmd.set("expandtab")
+Set = function (num)
+	vim.cmd.set(string.format("tabstop=%s", num))
+	vim.cmd.set(string.format("shiftwidth=%s", num))
+	vim.cmd.set("expandtab")
+end
+
+Set(4)
 
