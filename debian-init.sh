@@ -35,12 +35,6 @@ sudo apt-get install tmux
 # tmux plugin manager
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-# vim colorscheme
-git clone https://github.com/catppuccin/vim .vim
-mkdir ~/.vim
-mv .vim/colors ~/.vim/colors
-rm .vim -rf
-
 # link
 
 # neovim conf
@@ -54,9 +48,6 @@ ln -s ~/Dotfiles/.bashrc ~/.bashrc
 
 # tmux conf
 ln -s ~/Dotfiles/tmux/.tmux.conf ~/.tmux.conf
-
-# vim conf
-ln -s ~/Dotfiles/vim/.vimrc ~/.vimrc
 
 # final step login with github auth
 gh auth login

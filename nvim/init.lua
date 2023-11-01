@@ -38,8 +38,9 @@ require("lazy").setup({
 		}
 	},
 	"spacey-sooty/stackmaps.nvim",
-	{ 
-		'nvim-telescope/telescope-fzf-native.nvim', 
+	"spacey-sooty/Refactor.nvim",
+	{
+		'nvim-telescope/telescope-fzf-native.nvim',
                 build = 'make'
 	},
 })
