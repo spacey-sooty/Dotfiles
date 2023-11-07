@@ -1,9 +1,14 @@
 #!/usr/bin/sh
 
+chmod +x scripts/*.sh
+
 # install
 
 # rust
 curl https://sh.rustup.rs -sSf | sh
+
+# docker
+./scripts/docker.sh
 
 # neovim
 # build deps
