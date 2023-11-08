@@ -42,6 +42,9 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # link
 
+# inputrc
+ln -s ~/Dotfiles/inputrc ~/.config/inputrc
+
 # neovim conf
 ln -s ~/Dotfiles/nvim ~/.config/nvim
 
