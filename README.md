@@ -11,5 +11,4 @@ I can reasonably guarantee configuration options work on platforms I provide an 
 As of current I have not tested the install scripts so I make no promises they will work. 
 
 ## TODO
-- docker install + conf
-- terminal autocomplete
+- docker conf
