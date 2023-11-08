@@ -130,3 +130,5 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+set -o vi
+
