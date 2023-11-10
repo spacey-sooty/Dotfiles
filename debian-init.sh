@@ -2,6 +2,10 @@
 
 chmod +x scripts/*.sh
 
+# bash conf
+rm ~/.bashrc
+ln -s ~/Dotfiles/.bashrc ~/.bashrc
+
 # install
 
 # rust
@@ -10,24 +14,14 @@ curl https://sh.rustup.rs -sSf | sh
 # docker
 ./scripts/docker.sh
 
-# neovim
-# build deps
-sudo apt-get install ninja-build gettext cmake unzip curl
-cd ~
-git clone https://github.com/neovim/neovim.git
-cd neovim
-make
-sudo make install
+# node stuff
+./scripts/node.sh
 
-# node, pnpm, turbo
-curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
-source ~/.bashrc
-nvm install --lts
-npm install -g pnpm
-npm install -g turbo
+# neovim
+./scripts/nvim.sh
 
 # gh cli
-sudo apt install github-cli
+sudo apt install gh
 
 # ripgrep
 sudo apt-get install ripgrep
@@ -50,9 +44,6 @@ ln -s ~/Dotfiles/nvim ~/.config/nvim
 
 # git conf
 ln -s ~/Dotfiles/.gitconfig ~/.gitconfig
-
-# bash conf
-ln -s ~/Dotfiles/.bashrc ~/.bashrc
 
 # tmux conf
 ln -s ~/Dotfiles/tmux/.tmux.conf ~/.tmux.conf
