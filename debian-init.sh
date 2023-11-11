@@ -48,6 +48,9 @@ ln -s ~/Dotfiles/.gitconfig ~/.gitconfig
 # tmux conf
 ln -s ~/Dotfiles/tmux/.tmux.conf ~/.tmux.conf
 
+# gtk thingy
+ln -s ~/Dotfiles/gtk.css ~/.config/gtk-3.0/gtk.css
+
 # final step login with github auth
 gh auth login
 

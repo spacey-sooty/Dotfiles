@@ -1,0 +1,10 @@
+headerbar {
+  color: white;
+  background-color: black;
+}
+
+headerbar:backdrop {
+  color: white;
+  background-color: black;
+}
+
