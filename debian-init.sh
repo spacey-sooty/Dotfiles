@@ -9,7 +9,7 @@ ln -s ~/Dotfiles/.bashrc ~/.bashrc
 # install
 
 # clang
-sudo apt install clang
+sudo apt-get install clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev
 
 # rust
 curl https://sh.rustup.rs -sSf | sh
