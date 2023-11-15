@@ -8,6 +8,9 @@ ln -s ~/Dotfiles/.bashrc ~/.bashrc
 
 # install
 
+# clang
+sudo apt install clang
+
 # rust
 curl https://sh.rustup.rs -sSf | sh
 

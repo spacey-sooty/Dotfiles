@@ -132,3 +132,5 @@ esac
 
 set -o vi
 
+export PATH="$PATH:~/Downloads/flutter/bin"
+
