@@ -133,4 +133,5 @@ esac
 set -o vi
 
 export PATH="$PATH:~/Downloads/flutter/bin"
+export PATH="$PATH:~/Downloads/gradle-8.4/bin"
 
