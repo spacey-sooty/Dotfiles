@@ -132,6 +132,9 @@ esac
 
 set -o vi
 
-export PATH="$PATH:~/Downloads/flutter/bin"
+export PATH="$PATH:/home/spacey_sooty/Downloads/flutter/bin"
 export PATH="$PATH:~/Downloads/gradle-8.4/bin"
+
+CHROME_EXECUTABLE=/usr/bin/brave-browser
+export CHROME_EXECUTABLE
 

@@ -14,6 +14,13 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+    {
+    "Febri-i/snake.nvim",
+    dependencies = {
+        "Febri-i/fscreen.nvim"
+    },
+    opts = {}
+    },
     "andweeb/presence.nvim",
     "folke/twilight.nvim",
     "folke/zen-mode.nvim",
