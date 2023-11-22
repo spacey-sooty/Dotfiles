@@ -15,7 +15,6 @@ require('mason-lspconfig').setup({
 		'svelte',
 		'astro',
 		'lua_ls',
-        'emmet',
 	},
   handlers = {
     lsp_zero.default_setup,

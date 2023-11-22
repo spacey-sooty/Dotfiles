@@ -22,7 +22,6 @@ require("lazy").setup({
     opts = {}
     },
     "andweeb/presence.nvim",
-    "folke/twilight.nvim",
     "folke/zen-mode.nvim",
 	"catppuccin/nvim",
 	"tpope/vim-sensible",
@@ -34,6 +33,8 @@ require("lazy").setup({
 	"echasnovski/mini.comment",
 	"nvim-treesitter/nvim-treesitter",
 	"tjdevries/sPoNGe-BoB.NvIm",
+    -- "github/copilot.vim",
+    "zbirenbaum/copilot.lua",
 	build = ":TSUpdate",
 	{
 		"VonHeikemen/lsp-zero.nvim",
