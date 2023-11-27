@@ -1,0 +1,6 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=dwm
+Comment=Dynamic window manager fixes
+Exec=/usr/local/bin/dwm-start.sh
+Type-Application

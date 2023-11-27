@@ -54,6 +54,10 @@ ln -s ~/Dotfiles/tmux/.tmux.conf ~/.tmux.conf
 # gtk thingy
 ln -s ~/Dotfiles/gtk.css ~/.config/gtk-3.0/gtk.css
 
+# dwm thingy
+sudo ln -s ~/Dotfiles/dwm.desktop ~/usr/share/xsessions/dwm.desktop
+sudo ln -s ~/Dotfiles/scripts/dwm-start.sh /usr/local/bin/dwm-start.sh
+
 # final step login with github auth
 gh auth login
 
