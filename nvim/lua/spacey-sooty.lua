@@ -12,5 +12,10 @@ Set = function (num)
 	vim.cmd.set("expandtab")
 end
 
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+  pattern = { "*" },
+  command = [[%s/\s\+$//e]],
+})
+
 Set(4)
 
