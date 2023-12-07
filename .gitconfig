@@ -17,3 +17,5 @@
 [alias]
     ac = commit -am
     commit = commit
+[pull]
+	rebase = true
