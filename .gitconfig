@@ -17,6 +17,6 @@
 [tag]
 	gpgsign = true
 [alias]
-    ac = commit -a
+    ac = commit -am
 [pull]
 	rebase = true
