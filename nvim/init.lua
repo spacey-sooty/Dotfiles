@@ -50,10 +50,6 @@ require("lazy").setup({
 	},
 	"spacey-sooty/stackmaps.nvim",
 	"spacey-sooty/Refactor.nvim",
-	{
-		'nvim-telescope/telescope-fzf-native.nvim',
-                build = 'make'
-	},
 })
 
 vim.cmd.colorscheme("catppuccin")
