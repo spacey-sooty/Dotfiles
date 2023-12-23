@@ -7,7 +7,7 @@
 [user]
 	name = Isaac Turner
 	email = spacey_sooty@outlook.com
-	signingkey = 8BBFA093F32C44BA
+	signingkey = 1035FD0B4997B9DB
 [core]
 	editor = nvim
 [init]

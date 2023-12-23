@@ -6,6 +6,7 @@ sudo dnf install dnf-plugins-core -y
 sudo dnf install neovim -y
 sudo dnf install tmux -y
 sudo dnf install ripgrep -y
+sudo dnf install ufw -y
 sudo dnf install gh -y
 sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo -y
 sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
