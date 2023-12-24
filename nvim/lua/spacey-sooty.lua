@@ -1,3 +1,4 @@
+require('globals')
 require('spacey-sooty.plugins')
 require('spacey-sooty.options')
 require('spacey-sooty.remap')
