@@ -148,3 +148,7 @@ export PATH="$PATH:~/Downloads/gradle-8.4/bin"
 CHROME_EXECUTABLE=/usr/bin/brave-browser
 export CHROME_EXECUTABLE
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
