@@ -18,6 +18,7 @@ set('n', '<leader><leader>n', function()
     local name = vim.fn.input('Name > ')
     local path = vim.fn.getcwd() .. "/" .. name
     vim.cmd("!touch " .. path)
+    vim.cmd.e(name)
 end)
 
 set('n', '<leader>hn', function()
@@ -25,4 +26,5 @@ set('n', '<leader>hn', function()
     local path = vim.fn.getcwd() .. "/" .. name
     vim.cmd("!touch " .. path)
     require('harpoon.mark').add_file(name)
+    vim.cmd.e(name)
 end)
