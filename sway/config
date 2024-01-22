@@ -14,7 +14,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term gnome-terminal
+set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -66,10 +66,16 @@ output * bg /home/spacey_sooty/Pictures/in-the-rain.png fill
     bindsym $mod+Return exec $term
 
     # Kill focused window
-    bindsym $mod+Shift+q kill
+    bindsym $mod+q kill
 
     # Start your launcher
     bindsym $mod+d exec $menu
+
+    bindsym F1 exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+    bindsym F3 exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+    bindsym F2 exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+    bindsym F6 exec light -U 5.00
+    bindsym F7 exec light -A 5.00
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.

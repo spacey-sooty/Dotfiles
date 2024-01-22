@@ -12,3 +12,5 @@ ln -s ~/Dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/Dotfiles/nvim ~/.config/nvim
 ln -s ~/Dotfiles/inputrc ~/.config/inputrc
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+curl https://raw.githubusercontent.com/alacritty/alacritty-theme/master/themes/catppuccin_mocha.toml >> ~/.config/alacritty/catppuccin_mocha.toml
+ln -s ~/Dotfiles/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml

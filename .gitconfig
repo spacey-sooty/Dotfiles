@@ -13,9 +13,9 @@
 [init]
 	defaultBranch = master
 [commit]
-	gpgsign = true
+    # gpgsign = true
 [tag]
-	gpgsign = true
+    # gpgsign = true
 [alias]
     ac = commit -am
 [pull]

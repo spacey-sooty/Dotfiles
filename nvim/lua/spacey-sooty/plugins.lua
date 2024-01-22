@@ -28,6 +28,26 @@ plugins = {
     'andweeb/presence.nvim',
     'williamboman/mason.nvim',
     'nvim-treesitter/nvim-treesitter',
+	"chrisgrieser/nvim-spider",
+	keys = {
+		{ -- example for lazy-loading on keystroke
+			"e",
+			"<cmd>lua require('spider').motion('e')<CR>",
+			mode = { "n", "o", "x" },
+		},
+		{ -- example using an explicit function
+			"w",
+			function()
+				require('spider').motion('w', {
+					customPatterns = {
+							patterns = { ('%x'):rep(6) .. '+' },
+							overrideDefault = true,
+					},
+				})
+			end,
+			mode = { 'n', 'o', 'x' },
+		},
+	},
 }
 
 opts = {}

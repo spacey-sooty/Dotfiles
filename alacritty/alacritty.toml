@@ -1,0 +1,17 @@
+import = [
+	"~/.config/alacritty/catppuccin_mocha.toml"
+]
+
+[window]
+startup_mode = "Fullscreen"
+
+[mouse]
+hide_when_typing = true
+
+[shell]
+program = "/bin/bash"
+args = [
+	"-l",
+	"-c",
+	"tmux attach || tmux",
+]
