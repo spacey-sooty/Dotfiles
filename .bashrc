@@ -154,3 +154,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 export PATH=$PATH:/home/spacey_sooty/.local/bin
+export PATH=$PATH:/home/spacey_sooty/Downloads/dartsdk-linux-x64-release/dart-sdk/bin
+alias dartls="dart language-server"
+export PATH=$PATH:/home/spacey_sooty/Downloads/flutter/bin

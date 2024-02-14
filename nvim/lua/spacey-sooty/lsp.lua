@@ -8,6 +8,7 @@ lspconfig.rust_analyzer.setup({
     ['rust-analyzer'] = {},
   },
 })
+lspconfig.tsserver.setup({})
 lspconfig.typst_lsp.setup{
 	settings = {
 		exportPdf = "never" -- Choose onType, onSave or never.
@@ -16,6 +17,7 @@ lspconfig.typst_lsp.setup{
 }
 lspconfig.clangd.setup({})
 lspconfig.jdtls.setup({})
+lspconfig.dartls.setup({})
 
 
 -- Global mappings.
@@ -117,3 +119,9 @@ local function quickfix()
 end
 
 vim.keymap.set('n', '<leader>qf', quickfix, opts)
+
+-- for frc stuff
+vim.keymap.set('n', '<leader>frc', function()
+    vim.cmd("!./gradlew generateCompileCommands")
+    vim.cmd("!mv build/TargetedCompileCommands/linuxx86-64debug/compile_commands.json compile_commands.json")
+end)
