@@ -119,10 +119,3 @@ local function quickfix()
 end
 
 vim.keymap.set('n', '<leader>qf', quickfix, opts)
-
--- for frc stuff
-vim.keymap.set('n', '<leader>frc', function()
-    vim.cmd("!./gradlew generateCompileCommands")
-    vim.cmd("!mv build/TargetedCompileCommands/linuxx86-64debug/compile_commands.json compile_commands.json")
-    vim.cmd("LspRestart")
-end)

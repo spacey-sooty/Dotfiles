@@ -157,3 +157,4 @@ export PATH=$PATH:/home/spacey_sooty/.local/bin
 export PATH=$PATH:/home/spacey_sooty/Downloads/dartsdk-linux-x64-release/dart-sdk/bin
 alias dartls="dart language-server"
 export PATH=$PATH:/home/spacey_sooty/Downloads/flutter/bin
+export PATH=$PATH:/home/spacey_sooty/wpilib/2024/roborio/bin
