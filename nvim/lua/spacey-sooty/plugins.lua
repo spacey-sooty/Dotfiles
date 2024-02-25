@@ -29,6 +29,17 @@ plugins = {
     'williamboman/mason.nvim',
     'nvim-treesitter/nvim-treesitter',
     'ThePrimeagen/vim-apm',
+    {
+        "Febri-i/snake.nvim",
+        dependencies = {
+            "Febri-i/fscreen.nvim"
+        },
+        opts = {}
+    },
+    {
+        'nvim-telescope/telescope-fzf-native.nvim',
+        build = 'make'
+    },
 }
 
 opts = {}
