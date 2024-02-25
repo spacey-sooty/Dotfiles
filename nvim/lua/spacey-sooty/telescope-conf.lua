@@ -2,6 +2,11 @@ local M = {}
 
 M.builtin = require('telescope.builtin')
 require('telescope').load_extension('fzf')
+require('telescope').setup({
+    defaults = {
+        file_ignore_patterns = { '.git/' },
+    }
+})
 
 M.is_inside_work_tree = {}
 
@@ -21,10 +26,8 @@ M.project_files = function()
   end
 end
 
--- shows .git as well
 M.find_all = function()
     local opts = {
-        no_ignore = true,
         hidden = true,
     }
 
