@@ -40,7 +40,8 @@ end
 
 vim.keymap.set('n', '<leader>pf', M.builtin.find_files, {})
 vim.keymap.set('n', '<leader>pa',  M.find_all, {})
-vim.keymap.set('n', '<leader>pd', M.project_files, {})
+vim.keymap.set('n', '<leader>pg', M.project_files, {})
+vim.keymap.set('n', '<leader>pd', M.builtin.diagnostics, {})
 vim.keymap.set('n', '<leader>ps',  M.project_grep, {})
 vim.keymap.set('n', '<leader>ph', M.builtin.help_tags, {})
 

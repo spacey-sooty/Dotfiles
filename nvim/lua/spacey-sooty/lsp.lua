@@ -9,12 +9,6 @@ lspconfig.rust_analyzer.setup({
   },
 })
 lspconfig.tsserver.setup({})
-lspconfig.typst_lsp.setup{
-	settings = {
-		exportPdf = "never" -- Choose onType, onSave or never.
-        -- serverPath = "" -- Normally, there is no need to uncomment it.
-	}
-}
 lspconfig.clangd.setup({})
 lspconfig.jdtls.setup({})
 lspconfig.dartls.setup({})
@@ -60,7 +54,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-local servers = { 'rust_analyzer', 'clangd', 'typst_lsp', 'jdtls', }
+local servers = { 'rust_analyzer', 'clangd', 'jdtls', }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     capabilities = capabilities,
